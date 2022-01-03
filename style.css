@@ -4,11 +4,10 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: 0px;
-    margin-bottom: -40px;
 }
 
-body {
-    margin: 0px;
+header, footer {
+    min-height: 20vh;
 }
 
 header a {
@@ -24,21 +23,47 @@ header h1 {
     font-size: 24px;
     color: #F9FAF9;
     margin: 35px;
-}
-
-.body {
-    display: flex;
+    }
+body {
+    display:flex;
+    min-height: 100vh;
     flex-direction: column;
+    margin: 0px;
 }
 
-.websitecontainer {
-    background-color: #1F2937;
-    height: 300px;
+.section1-container {
+    display: flex;
+    background-color: #1F2937; 
+    align-items: stretch;
 }
 
+.textbutton-container {
+    background-color: black;
+}
 
-.websitecontainer p {
+.image-container {
+    background-color: blue;
+    flex: 1 0 50%;
+}
 
+.image-container p {
+    background-color: lightgray;
+    display: flex;
+    height: 12rem;
+    margin: 26px;
+    width: 12rem;
+    align-self: center;
+    text-align: center;
+    width: 50%;
+}
+
+.image-container, .textbutton-container {
+    padding: 32px;
+}
+
+.section1-container p {
+    font-size: 18px;
+    color: #e5e7eb;
 }
 
 h2 {
@@ -56,10 +81,13 @@ h2 {
 
 
 
-.footer {
+footer {
     display: flex;
     justify-content: center;
     align-content: center;
     height: 72px;
     background: #eee;
+    align-self: center;
+    text-align: center;
+    width: 100%;
   }
